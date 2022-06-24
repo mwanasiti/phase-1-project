@@ -14,5 +14,5 @@ function getData(id){
 }
 
 function restaurantInfo(data){
-	console.log(data.name)
+	// console.log(data.name)
 }
