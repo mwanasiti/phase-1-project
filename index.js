@@ -3,7 +3,9 @@
 // 	.then(response => console.log(response))
 // 	.catch(err => console.error(err));
 
-	document.addEventListener('DOMContentLoaded',()=>{
+	document.addEventListener('DOMContentLoaded',e=>{
+	getData(1,2,3,4,5)
+	e.preventDefault()
 	document.addEventListener('dblclick',()=>{
 		alert("WELCOME")
 		const form=document.querySelector('form')
