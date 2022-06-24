@@ -50,8 +50,11 @@ function postComment(post){
 	const postHeaders={
 		method:'POST',
 		headers:{'Content-type':'application/json'},
-		
+		body:JSON.stringify(post)
+
 	}
+
+	
 }
 
 
