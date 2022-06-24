@@ -21,7 +21,7 @@ function restaurantInfo(data){
 	const btn=document.querySelector('button')
 	btn.addEventListener('click',()=>{
 		alert("Review")
-		btn.innerHTML +=1
+		pbtn.innerHTML +=1
 	})
 }
 
