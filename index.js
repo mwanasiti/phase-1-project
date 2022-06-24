@@ -11,3 +11,4 @@ function getData(id){
 	fetch(`http://localhost:3000/restaurants/${id}`).then(res=>res.json()).then(data=>console.log(data))
 }
 
+function restaurantInfo()
