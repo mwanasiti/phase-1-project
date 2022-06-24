@@ -4,7 +4,7 @@
 // 	.catch(err => console.error(err));
 
 	document.addEventListener('DOMContentLoaded',()=>{
-	getData(3)
+	getData(1)
 })
 
 function getData(id){
