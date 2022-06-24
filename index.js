@@ -3,21 +3,10 @@ fetch('https://worldwide-restaurants.p.rapidapi.com/search', options)
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
 
-	let container=document.getElementsByClassName("container")
-	let navbarList=document.getElementsByClassName("navbar list")
-	let navItemOne=document.getElementsByClassName("navbar-link1")
-	let navItemTwo=document.getElementsByClassName("navbar-link2")
-	let searchBtn=document.getElementById("button")
+	document.addEventListener('DOMContentLoaded',()=>{
+	getData(3)
+})
 
-
-	searchBtn.addEventListener('submit',getRandomRestaurant)
-	navItemOne.addEventListener('click', getRestaurant)
-	navItemTwo.addEventListener('',getCuisine)
-
-	function getRandomRestaurant(){
-		fetch('https://worldwide-restaurants.p.rapidapi.com/search').then(res=>res.json()).then(response => console.log(response.result.data))
-	}
-
-	function getRestaurant(){
-		fetch('https://worldwide-restaurants.p.rapidapi.com/search').then(res=>res.json()).then(response=>console.log(response.result.data))
-	}
+function getData(id){
+	fetch(`http://localhost:3000/restaurants`/${id}).then(res=>res.json()).then(data=>console.log(data))
+}
