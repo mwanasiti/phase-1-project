@@ -47,7 +47,9 @@ function addComment(){
 }
 
 function postComment(post){
-	console.log(post);
+	const postHeaders={
+		method:'POST'
+	}
 }
 
 
