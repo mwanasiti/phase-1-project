@@ -4,7 +4,10 @@
 // 	.catch(err => console.error(err));
 
 	document.addEventListener('DOMContentLoaded',()=>{
-	getData(5)
+	getData(2)
+	document.addEventListener('dblclick',()=>{
+		alert("WELCOME")
+	})
 })
 
 function getData(id){
@@ -19,9 +22,19 @@ function restaurantInfo(data){
 	document.getElementById('description').innerHTML=data.description
 	document.querySelector('img').src=data.image
 	const btn=document.querySelector('button')
+	let count=parseInt(document.querySelector('span').innerHTML)+=
+
 	btn.addEventListener('click',()=>{
-		alert("Review")
-		pbtn.innerHTML +=1
+		// console.log(count ++);
+	})
+}
+
+function addComment(){
+	const form=document.getElementById('formComment')
+	form.addEventListener('submit',()=>{
+		e.preventDefault()
+
+
 	})
 }
 
