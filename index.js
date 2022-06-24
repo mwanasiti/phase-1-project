@@ -4,7 +4,7 @@
 // 	.catch(err => console.error(err));
 
 	document.addEventListener('DOMContentLoaded',()=>{
-	getData(4)
+	getData(5)
 })
 
 function getData(id){
@@ -18,6 +18,11 @@ function restaurantInfo(data){
 	document.getElementById('name').innerHTML=data.name
 	document.getElementById('description').innerHTML=data.description
 	document.querySelector('img').src=data.image
+	const btn=document.querySelector('button')
+	btn.addEventListener('click',()=>{
+		alert("Review")
+		btn.innerHTML +=1
+	})
 }
 
 
