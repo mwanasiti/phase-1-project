@@ -23,11 +23,11 @@ body{
 /* nav{ */
     /* background-color: saddlebrown; */
     /* align-self: center; */
-    /* width: 200px; */
-    /* height: 80px; */
-    /* align-items: center; */
-    /* display: contents; */
-/* } */
+    width: 200px;
+    height: 80px;
+    align-items: center;
+    display: contents;
+}
 .container{
     width: 100%;
     height: fit-content;
