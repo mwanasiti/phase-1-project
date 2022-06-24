@@ -4,7 +4,7 @@
 // 	.catch(err => console.error(err));
 
 	document.addEventListener('DOMContentLoaded',()=>{
-	getData(1)
+	getData(4)
 })
 
 function getData(id){
@@ -15,6 +15,6 @@ function getData(id){
 
 function restaurantInfo(data){
 	// console.log(data.name)
-	document.getElementById('info').innerHTML=data.name
+	document.getElementById('name').innerHTML=data.name
 	document.getElementById('description').innerHTML=data.description
 }
