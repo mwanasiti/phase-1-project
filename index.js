@@ -20,3 +20,4 @@ function restaurantInfo(data){
 	document.querySelector('img').src=data.image
 }
 
+
