@@ -10,10 +10,11 @@
 function getData(id){
 	fetch(`http://localhost:3000/restaurants/${id}`)
 	.then(res=>res.json())
-	.then(data=>restaurantInfo(data.description))
+	.then(data=>restaurantInfo(data))
 }
 
 function restaurantInfo(data){
 	// console.log(data.name)
-	document.getElementById('description').innerHTML=data.description
+	document.getElementById('info').innerHTML=data.name
+	document.getElementById('description').innerHTML=data.name
 }
