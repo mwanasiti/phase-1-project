@@ -4,7 +4,6 @@
 // 	.catch(err => console.error(err));
 
 	document.addEventListener('DOMContentLoaded',()=>{
-	getData(2)
 	document.addEventListener('dblclick',()=>{
 		alert("WELCOME")
 		const form=document.querySelector('form')
@@ -50,13 +49,21 @@ function postComment(post){
 	const postHeaders={
 		method:'POST',
 		headers:{'Content-type':'application/json'},
-		body:JSON.stringify(post)
+		body:JSON.stringify({
+			comment:post
+		})
 
 	}
 
 	fetch('http://localhost:3000/comments',postHeaders)
 	.then(res=>res.json())
-	.then(data=>console.log(data))
+	.then(data=>ulpoadComments(data))
+}
+
+function ulpoadComments(comments){
+	const li=document.createElement('li')
+	li.innerHTML=comments.comment
+	document.getElementById('comments').appendChild(li)
 }
 
 
