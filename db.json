@@ -41,12 +41,12 @@
           "key": "103233",
           "name": "African"
         },
-        "description": "Experience fresh flavors from Asia and around the world in the all-day dining venue, Purnawarman Restaurant at the Hilton Bandung hotel. Savor a fresh buffet breakfast, a la carte lunch and buffet dinner and experience the theatrical, interactive kitchen. Dine on contemporary and traditional Asian delicacies such as Sop Buntut and Purnawarman Fried Rice on relaxed indoor and outdoor seating in this warm and welcoming restaurant.",
-        "name": "Watapeli Restaurant",
+        "description": "Pago Restaurant is a new dining experience concept serving authentic Indonesian, Asian and Western specialties. Open for breakfast, lunch, and dinner, this restaurant offers extensive buffet and a la carte options.",
+        "name": "Papandayan",
         "num_reviews": "4561",
         "open_now_text": "Open Now",
         "phone": "+62 22 6634366888",
-        "caption": "Social gathering at Purnawarman Restaurant",
+        "caption": "Social gathering at Papandayan Restaurant",
         "price": "$170,000 - $1,262,000",
         "ranking_position": "21",
         "rating": "7.0",
@@ -135,6 +135,7 @@
         "write_review": "http://maraimali.com/mwanasiti",
         "image": "http://cdn.cnn.com/cnnnext/dam/assets/200120161356-cnn-worlds-best-new-restaurants---madera---simon-brown-photography-1-1.jpg"
       }
+      
     ],
     "comments": [
       {

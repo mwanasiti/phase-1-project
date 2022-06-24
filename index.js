@@ -17,6 +17,6 @@ function restaurantInfo(data){
 	// console.log(data.name)
 	document.getElementById('name').innerHTML=data.name
 	document.getElementById('description').innerHTML=data.description
-	document.querySelector('img').src
+	document.querySelector('img').src=data.image
 }
 
