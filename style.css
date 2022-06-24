@@ -20,14 +20,14 @@ body{
 
 }
 
-/* nav{
+nav{
     background-color: saddlebrown;
     align-self: center;
     width: 200px;
     height: 80px;
     align-items: center;
     display: contents;
-} */
+}
 .container{
     width: 100%;
     height: fit-content;
@@ -50,9 +50,10 @@ body{
     background-position: center;
     justify-content: center;
 }
-li{
+/* li{ */
     text-align: center;
     align-items: center;
     displ
 
 }
+
