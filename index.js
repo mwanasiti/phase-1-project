@@ -18,3 +18,4 @@ function restaurantInfo(data){
 	document.getElementById('name').innerHTML=data.name
 	document.getElementById('description').innerHTML=data.description
 }
+
