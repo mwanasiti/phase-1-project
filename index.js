@@ -48,7 +48,9 @@ function addComment(){
 
 function postComment(post){
 	const postHeaders={
-		method:'POST'
+		method:'POST',
+		headers:{'Content-type':'application/json'},
+		
 	}
 }
 
