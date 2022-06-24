@@ -16,5 +16,5 @@ function getData(id){
 function restaurantInfo(data){
 	// console.log(data.name)
 	document.getElementById('info').innerHTML=data.name
-	document.getElementById('description').innerHTML=data.name
+	document.getElementById('description').innerHTML=data.description
 }
