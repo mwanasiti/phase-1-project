@@ -33,6 +33,7 @@ function addComment(){
 	const form=document.getElementById('formComment')
 	form.addEventListener('submit',()=>{
 		e.preventDefault()
+		console.log(form.comment.value);
 
 
 	})
