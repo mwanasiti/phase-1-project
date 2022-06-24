@@ -29,6 +29,9 @@ Continue building features one by one.
 ## Project Name
 TO DIE FOR RESTAURANTS.
 
+## Author
+Ali Mariam
+
 ## Project Description
 Problem Statement:
 Many a times, finding a good restaurant proves to be quite a hustle for a majority. From deciding and planning for the exact location to the choice of food. Some of the challenges one may face include lack of knowledge on where the restaurants are located hence the inability to plan properly for transportation. Another challenge would be the lack of knowledge on the food offered in specific restaurants. 
@@ -36,7 +39,8 @@ Many a times, finding a good restaurant proves to be quite a hustle for a majori
 Solution statement:
 Creation of a platform that enables access to all the aforementioned details. Furthermore, providing the ability to access information about different restaurants from the same website and being being able to compare without having to shift from website to website. This would also help in the inclusion of restaurants that do not easily show up in the search engine thereby enabling one to have a broad range to choose from.
 
-
+## Copyright and license Information
+MIT License Copyright (c) [2022] [Ali Mariam] Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 

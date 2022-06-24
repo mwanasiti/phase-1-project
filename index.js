@@ -33,10 +33,14 @@ function addComment(){
 	const form=document.getElementById('formComment')
 	form.addEventListener('submit',()=>{
 		e.preventDefault()
-		console.log(form.comment.value);
-
-
+		const post=form.comment.value;
+		postComment(post)
 	})
 }
+
+function postComment(post){
+	console.log(post);
+}
+
 
 
