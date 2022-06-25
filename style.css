@@ -57,4 +57,9 @@ body{
     /* displ
 
 } */
-
+form{
+    margin-left: 300px;
+    align-self: initial;
+    margin-bottom: auto;
+    
+}

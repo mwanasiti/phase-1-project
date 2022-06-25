@@ -1,5 +1,5 @@
-// fetch('https://worldwide-restaurants.p.rapidapi.com/search', options)
-// 	.then(response => response.json())
+ fetch('https://worldwide-restaurants.p.rapidapi.com/search', options)
+ 	.then(response => response.json())
 // 	.then(response => console.log(response))
 // 	.catch(err => console.error(err));
 
@@ -17,7 +17,7 @@
 	})
 })
 function getData(id){
-	fetch(`http://localhost:3000/restaurants/${id}`)
+	fetch(`https://worldwide-restaurants.p.rapidapi.com/search${id}`)
 	.then(res=>res.json())
 	.then(data=>restaurantInfo(data))
 }
@@ -26,9 +26,9 @@ function getData(id){
 
 function restaurantInfo(data){
 	// console.log(data.name)
-	document.getElementById('name').innerHTML=data.name
-	document.getElementById('description').innerHTML=data.description
-	document.querySelector('img').src=data.image
+	document.getElementById('name').innerHTML=response.results.data.name
+	document.getElementById('description').innerHTML=response.results.data.description
+	document.querySelector('img').src=data.photo.images.small
 	// const btn=document.querySelector('button')
 	// let count=parseInt(document.querySelector('span').innerHTML)
 	addComment()
