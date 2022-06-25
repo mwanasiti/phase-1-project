@@ -1,6 +1,6 @@
  fetch('https://worldwide-restaurants.p.rapidapi.com/search', options)
  	.then(response => response.json())
-// 	.then(response => console.log(response))
+ 	.then(response => console.log(response))
 // 	.catch(err => console.error(err));
 
 	document.addEventListener('DOMContentLoaded',e=>{
