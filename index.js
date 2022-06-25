@@ -3,18 +3,16 @@
 // 	.then(response => console.log(response))
 // 	.catch(err => console.error(err));
 
-	document.addEventListener('DOMContentLoaded',e=>{
-	getData(5)
-	e.preventDefault()
+	document.addEventListener('DOMContentLoaded',()=>{
 	document.addEventListener('dblclick',()=>{
 		alert("WELCOME")
-		const form=document.querySelector('form')
+	})
+	const form=document.querySelector('form')
 		form.addEventListener('submit', event=>{
 			event.preventDefault()
 			const restaurantId=form.input.value;
 			getData(restaurantId)
 		})
-	})
 })
 function getData(id){
 	fetch(`http://localhost:3000/restaurants/${id}`)
