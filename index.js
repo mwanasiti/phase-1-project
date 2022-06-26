@@ -14,19 +14,36 @@
 			getData(restaurantId)
 		})
 })
+const encodedParams = new URLSearchParams();
+encodedParams.append("language", "en_US");
+encodedParams.append("limit", "30");
+encodedParams.append("location_id", "297704");
+encodedParams.append("currency", "USD");
+
+const options = {
+	method: 'POST',
+	headers: {
+		'content-type': 'application/x-www-form-urlencoded',
+		'X-RapidAPI-Key': 'fe0a55d916msh30498ca9f7b074dp1c5d61jsnb3bde7cc8234',
+		'X-RapidAPI-Host': 'worldwide-restaurants.p.rapidapi.com'
+	},
+	body: encodedParams
+};
+
 function getData(id){
-	fetch(`http://localhost:3000/restaurants/${id}`)
-	.then(res=>res.json())
-	.then(data=>restaurantInfo(data))
+	fetch(`https://siti-restaurants.herokuapp.com/restaurants/${id}`)
+		.then(res=>res.json())
+		.then(res=>restaurantInfo(res))
+		.catch(err => console.error(err));
 }
 
 
 
 function restaurantInfo(data){
 	// console.log(data.name)
-	document.getElementById('name').innerHTML=data.name
-	document.getElementById('description').innerHTML=data.description
-	document.querySelector('img').src=data.image
+	document.getElementById('name').innerHTML=data.data.name
+	document.getElementById('description').innerHTML=data.data.description
+	document.querySelector('img').src='https://res.cloudinary.com/buildsoko-images/'+data.data.image
 	// const btn=document.querySelector('button')
 	// let count=parseInt(document.querySelector('span').innerHTML)
 	addComment()
