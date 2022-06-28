@@ -30,11 +30,35 @@ const options = {
 	body: encodedParams
 };
 
-function getData(id){
-	fetch(`https://siti-restaurants.herokuapp.com/restaurants/${id}`)
-		.then(res=>res.json())
-		.then(res=>restaurantInfo(res))
-		.catch(err => console.error(err));
+function getData(){
+
+	fetch(`https://siti-restaurants.herokuapp.com/restaurants/${id}`, {
+		headers:{
+	
+	'Access-Control-Allow-Credentials': true,
+	
+	'Access-Control-Allow-Origin':'*',
+	
+	'Access-Control-Allow-Methods': 'GET',
+	
+	'Access-Control-Allow-Headers': 'application/json',
+	
+	},
+	
+	}).then(res => res.json())
+	
+	.then(posts => posts.forEach(post => {
+	
+	renderOnePost(post)
+	
+	}))
+}
+
+// function getData(id){
+// 	fetch(`https://siti-restaurants.herokuapp.com/restaurants/${id}`)
+// 		.then(res=>res.json())
+// 		.then(res=>restaurantInfo(res))
+// 		.catch(err => console.error(err));
 }
 
 
