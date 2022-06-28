@@ -30,29 +30,43 @@ const options = {
 	body: encodedParams
 };
 
-function getData(){
+function getData(id){
+	const addHeaders={
+		mthod:'GET',
+		headers:{'Access-Control-Allow-Origin': 'application/json'},
+	}
 
-	fetch(`https://siti-restaurants.herokuapp.com/restaurants/${id}`, {
-		headers:{
-	
-	'Access-Control-Allow-Credentials': true,
-	
-	'Access-Control-Allow-Origin':'*',
-	
-	'Access-Control-Allow-Methods': 'GET',
-	
-	'Access-Control-Allow-Headers': 'application/json',
-	
-	},
-	
-	}).then(res => res.json())
-	
-	.then(posts => posts.forEach(post => {
-	
-	renderOnePost(post)
-	
-	}))
+
+	fetch(`https://siti-restaurants.herokuapp.com/restaurants/${id}`, addHeaders)
+		.then(res=>res.json())
+		.then(res=>restaurantInfo(res))
+		.catch(err => console.error(err));
+
 }
+
+// function getData(){
+
+// 	fetch(`https://siti-restaurants.herokuapp.com/restaurants/${id}`, {
+// 		headers:{
+	
+// 	'Access-Control-Allow-Credentials': true,
+	
+// 	'Access-Control-Allow-Origin':'*',
+	
+// 	'Access-Control-Allow-Methods': 'GET',
+	
+// 	'Access-Control-Allow-Headers': 'application/json',
+	
+// 	},
+	
+// 	}).then(res => res.json())
+	
+// 	.then(posts => posts.forEach(post => {
+	
+// 	renderOnePost(post)
+	
+// 	}))
+// }
 
 // function getData(id){
 // 	fetch(`https://siti-restaurants.herokuapp.com/restaurants/${id}`)
