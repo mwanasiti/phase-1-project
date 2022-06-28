@@ -44,7 +44,7 @@ const options = {
 
 // }
 
-function getData(){
+function getData(id){
 
 	fetch(`https://siti-restaurants.herokuapp.com/restaurants/${id}`, {
 		headers:{
