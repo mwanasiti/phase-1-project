@@ -14,21 +14,6 @@
 			getData(restaurantId)
 		})
 })
-const encodedParams = new URLSearchParams();
-encodedParams.append("language", "en_US");
-encodedParams.append("limit", "30");
-encodedParams.append("location_id", "297704");
-encodedParams.append("currency", "USD");
-
-const options = {
-	method: 'POST',
-	headers: {
-		'content-type': 'application/x-www-form-urlencoded',
-		'X-RapidAPI-Key': 'fe0a55d916msh30498ca9f7b074dp1c5d61jsnb3bde7cc8234',
-		'X-RapidAPI-Host': 'worldwide-restaurants.p.rapidapi.com'
-	},
-	body: encodedParams
-};
 
 function getData(restaurantId){
 
@@ -42,7 +27,7 @@ function getData(restaurantId){
 	},
 	
 	}).then(res => res.json())
-	.then(res=>console.log(res))
+	.then(res=>restaurantInfo(res))
 }
 
 // function getData(id){
