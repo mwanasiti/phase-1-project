@@ -59,7 +59,7 @@ function getData(){
 // 		.then(res=>res.json())
 // 		.then(res=>restaurantInfo(res))
 // 		.catch(err => console.error(err));
-}
+// }
 
 
 
