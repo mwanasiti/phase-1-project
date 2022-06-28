@@ -38,23 +38,23 @@ function restaurantInfo(data){
 	document.querySelector('img').src='https://res.cloudinary.com/buildsoko-images/'+data.data.image
 	// const btn=document.querySelector('button')
 	// let count=parseInt(document.querySelector('span').innerHTML)
-	addComment()
+	addComment(data)
 }
 	// btn.addEventListener('click',()=>{
 	// 	// console.log(count ++);
 	// })
 
 
-function addComment(){
+function addComment(restaurantId){
 	const form=document.getElementById('formComment')
 	form.addEventListener('submit',e=>{
 		e.preventDefault()
 		const post=(form.comment.value);
-		postComment(post)
+		postComment(restaurantId, post)
 	})
 }
 
-function postComment(post){
+function postComment(restaurantId, post){
 	const postHeaders={
 		method:'POST',
 		headers:{'Content-type':'application/json'},
@@ -63,7 +63,7 @@ function postComment(post){
 		})
 
 	}
-	fetch('http://localhost:3000/comments',postHeaders)
+	fetch(`https://siti-restaurants.herokuapp.com/comments/${restaurantId}`,postHeaders)
 	.then(res=>res.json())
 	.then(data=>ulpoadComments(data))
 }
