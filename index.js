@@ -59,7 +59,8 @@ function postComment(restaurantId, post){
 		method:'POST',
 		headers:{'Content-type':'application/json'},
 		body:JSON.stringify({
-			comment:post
+			comment:post,
+			restaurant: restaurantId
 		})
 
 	}
